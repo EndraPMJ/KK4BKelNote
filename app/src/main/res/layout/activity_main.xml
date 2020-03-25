@@ -111,14 +111,14 @@
             android:layout_height="156px"
             android:layout_marginStart="153dp"
             android:layout_marginEnd="152dp"
-            android:layout_marginBottom="44dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/buttontambah"
             android:text="Create"
             android:textColor="#FFFFFF"
             android:textSize="56px"
-            android:background="@drawable/buttontambah"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintHorizontal_bias="0.506"
             app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
