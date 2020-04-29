@@ -32,12 +32,22 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <ImageView
+            android:id="@+id/iv_calender"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/calendar" />
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="92dp"
+            android:layout_marginTop="60dp"
             android:text="Hello!"
             android:textColor="#FFFFFF"
             android:textSize="72px"
@@ -49,7 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="136dp"
+            android:layout_marginTop="108dp"
             android:text="Optimize your dialy routine,"
             android:textColor="#FFFFFF"
             android:textSize="36px"
@@ -62,22 +72,12 @@
             android:layout_width="110dp"
             android:layout_height="21dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="128dp"
             android:text="tasks and notes."
             android:textColor="#FFFFFF"
             android:textSize="36px"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="72px"
-            android:layout_height="72px"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="24dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/menu" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -88,15 +88,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/ilus" />
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="48px"
-            android:layout_height="48px"
-            android:layout_marginStart="350dp"
-            android:layout_marginTop="30dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/calendar" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
@@ -106,12 +97,12 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="639px"
-            android:layout_height="156px"
+            android:id="@+id/btn_create"
+            android:layout_width="640px"
+            android:layout_height="160px"
             android:layout_marginStart="153dp"
             android:layout_marginEnd="152dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/buttontambah"
             android:text="Create"
             android:textColor="#FFFFFF"
@@ -120,6 +111,32 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.506"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="8dp"
+            android:text="Your Notes"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
